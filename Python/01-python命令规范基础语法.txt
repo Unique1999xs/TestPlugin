@@ -1,0 +1,86 @@
+基础语法规则
+
+1.允许使用的字符
+变量名只能包含字母（a-z, A-Z）、数字（0-9）和下划线（_）。
+
+2.不能以数字开头
+这是初学者最常见的错误。
+user_name ✅ 合法
+2nd_place ❌ 非法
+
+3.区分大小写
+userName、username 和 USERNAME 在 Python 看来是三个完全不同的变量。
+
+4.不能使用关键字
+Python 的保留关键字（如 if, else, for, def, class 等）有特殊用途，不能作为变量名。
+你可以通过运行 import keyword; print(keyword.kwlist) 来查看所有关键字。
+
+
+| 元素类型 | 命名风格 | 示例 | 说明 |
+| :--- | :--- | :--- | :--- |
+| 变量 / 函数 / 模块 | 蛇形命名法 (snake_case) | `user_name`, `get_data()` | 全小写，单词间用下划线分隔 |
+| 类 / 异常 | 大驼峰命名法 (PascalCase) | `UserProfile`, `ValueError` | 每个单词首字母大写 |
+| 常量 | 全大写蛇形 (UPPER_CASE) | `MAX_SIZE`, `PI` | 表示不应修改的值 |
+| 私有变量/方法 | 单下划线开头 (`_`) | `_internal_cache` | 约定俗成的“私有”标识 |
+| 魔术方法 | 双下划线包裹 (`__`) | `__init__`, `__str__` | Python 内置的特殊方法 |<websource>source_group_web_8</websource>
+
+
+
+
+
+116-附加
+文件名不符合命名规范 大写 Test.py
+
+
+
+116
+方法名大写
+def GetUserData(): 
+    pass;
+
+
+
+117
+变量名大写
+Test_Var = 10
+
+
+118
+缩进不对
+def test(): 
+  print("test")
+
+
+
+119
+尾行空格
+a = 10  
+
+
+python命名规范 基础语法
+
+
+# --- 常量 ---
+MAX_CONNECTIONS = 100
+API_VERSION = "v1"
+
+# --- 变量 ---
+user_name = "Alice"
+is_active = True
+
+# --- 函数 ---
+def calculate_total_price(items):
+    """计算商品总价"""
+    total = 0
+    for item in items:
+        total += item.price
+    return total
+
+# --- 类 ---
+class DataProcessor:
+    def __init__(self):
+        self._internal_data = [] # 私有变量
+    
+    def process(self):
+        """处理数据"""
+        pass
