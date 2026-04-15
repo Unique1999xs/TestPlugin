@@ -1,0 +1,5 @@
+package Other;
+
+public class Test259 {
+     ÕâÊÇÒ»¶ÎGBK±àÂëµÄÖÐÎÄ×¢ÊÍ 
+}

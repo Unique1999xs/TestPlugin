@@ -19,4 +19,7 @@ def guess_num():
                 print(f"猜对啦，一共猜了{count}次")
                 break
 
-guess_num()
+if __name__ == "__main__":
+    guess_num()
+
+
